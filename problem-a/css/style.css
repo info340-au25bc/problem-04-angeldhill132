@@ -1,5 +1,7 @@
 main{
     margin-top: 23vh;
+    text-align: center;
+    font-family: 'Kaushan Script', fantasy;
 }
 main h1{
     margin: 0;
@@ -13,7 +15,7 @@ footer{
     display: none;
 }
 body{
-    margin: 0.5rem;
+    margin: .5rem;
     color: white;
     background-color: #93b8d7;
 }
@@ -26,7 +28,7 @@ nav {
 nav a {
   color: white;
   font-size: 2.5rem;
-  margin-right: 0.5em; 
+  margin-right: .5em; 
 }
 
 #social-links {
@@ -42,10 +44,10 @@ nav a {
     }
 }
 
-
 @media (min-width: 768px) {
+    html {height: 100%;}
     body {
-        background-image: url("img/splash-md.jpg");
+        background-image: url('../img/splash-md.jpg');
         background-position: center;
         background-size: cover;
     }
@@ -62,7 +64,7 @@ nav a {
 
 @media (min-width: 992px) {
     body {
-        background-image: url("img/splash-lg.jpg");
+        background-image: url('../img/splash-lg.jpg');
         background-position: center;
         background-size: cover;
     }
@@ -78,7 +80,7 @@ nav a {
 }
 @media (min-width: 1200px) {
     body {
-        background-image: url("img/splash-xl.jpg");
+        background-image: url('../img/splash-xl.jpg');
     }
 }
 
