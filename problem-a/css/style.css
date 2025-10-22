@@ -1,8 +1,17 @@
-/* on small mobile devices, the header has a purple background */
-header {
-    font-size: 1.2rem;
+main{
+    margin-top: 23vh;
 }
-
+main h1{
+    margin: 0;
+    font-size: 4rem;
+}
+main h2{
+    font-size: 2rem;
+    margin-top: 2em;
+}
+footer{
+    display: none;
+}
 body{
     margin: 0.5rem;
     color: white;
@@ -20,18 +29,56 @@ nav a {
   margin-right: 0.5em; 
 }
 
-@media (min-width: 598px) {
+#social-links {
+  display: none;
+}
 
+@media (min-width: 598px) {
+    #social-links {
+        display: block;
+    }
+    #hamburger-menu {
+        display: none;
+    }
 }
 
 
 @media (min-width: 768px) {
-    header {
-        font-size: 1.5rem; 
+    body {
+        background-image: url("img/splash-md.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    main{
+        text-shadow: 1px 1px #153c43;
+    }
+    footer{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
     }
 }
 
 @media (min-width: 992px) {
-
+    body {
+        background-image: url("img/splash-lg.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    nav a{
+        font-size: 1.5rem;
+    }
+    main h1{
+        font-size: 5rem;
+    }
+    main h2{
+        font-size: 3rem;
+    }
+}
+@media (min-width: 1200px) {
+    body {
+        background-image: url("img/splash-xl.jpg");
+    }
 }
 
